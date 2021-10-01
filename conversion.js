@@ -18,15 +18,15 @@ class Converter
     static gramsToAll(grams) {
         return [
                 ["Kilograms", round(grams / 1000)],
-                ["Pounds", round(grams / 454)],
-                ["Ounces", round(grams / 28.35)]
+                ["Pounds", round(grams * 0.00220462)],
+                ["Ounces", round(grams * 0.0352739200000000003)]
             ]
     }
 
     static ouncesToAll(ounces) {
         return [
             ["Kilograms", round(ounces / 35.274)],
-            ["Grams", round(ounces * 28.3495)],
+            ["Grams", round(ounces * 28.35)],
             ["Pounds", round(ounces / 16)]
         ]
     }
